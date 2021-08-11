@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../fixbotimg/1603640871161~2.png">
+    <title>FIXBOT - Dashboard</title>
+    
+    <!-- chartist CSS -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <link href="../assets/plugins/chartist-js/dist/chartist.min.css" rel="stylesheet">
+    <link href="../assets/plugins/chartist-js/dist/chartist-init.css" rel="stylesheet">
+    <link href="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link href="../assets/plugins/css-chart/css-chart.css" rel="stylesheet">
+    <!--This page css - Morris CSS -->
+    <link href="../assets/plugins/c3-master/c3.min.css" rel="stylesheet">
+    <!-- Vector CSS -->
+    <link href="../assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Demo styles -->
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+
+    <style>
+        /* body {
+            background: rgb(0, 0, 0);
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        } */
+
+        .swiper-container  {
+            width: 100%;
+            /* padding: 30px; */
+            border-radius: 20px !important;
+            background: rgba(255, 255, 255, 0.883) !important;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+            backdrop-filter: blur(4px) !important;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            
+        }
+        .swiper-wrapper{
+            height: 100%;
+            width: 100%;
+            
+        }
+        
+     
+        
+        
+        .swiper-slide {
+            border-radius: 30px !important;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+            background-image: url("../img/car.jpg"); 
+            background-position: center;
+            background-size: cover;
+            width: 250px;
+            height: 250px;
+            
+            
+
+            
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="row swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    
+    </div>
+    
+    
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        
+        // var assets = document.getElementById('assets');
+        // var asss = "";
+        //     for (var it = 0; it < 10; it++) {
+        //         asss += `
+        //                     <div class="swiper-slide" style="background-image:url(../img/car.jpg)">
+        //                         <p class="btn btn-success" >${it}</p>
+        //                     </div>
+        //                     <div class="swiper-slide" style="background-image:url(../img/car.jpg)">
+        //                         <p class="btn btn-success" >${it}</p>
+        //                     </div>
+        //                     <div class="swiper-slide" style="background-image:url(../img/car.jpg)">
+        //                         <p class="btn btn-success" >${it}</p>
+        //                     </div>
+        //                     <div class="swiper-slide" style="background-image:url(../img/car.jpg)">
+        //                         <p class="btn btn-success" >${it}</p>
+        //                     </div>
+        //                     <div class="swiper-slide" style="background-image:url(../img/car.jpg)">
+        //                         <p class="btn btn-success" >${it}</p>
+        //                     </div>
+        //                     <div class="swiper-slide" style="background-image:url(../img/car.jpg)">
+        //                         <p class="btn btn-success" >${it}</p>
+        //                     </div>
+                        
+                            
+                            
+        //                 `
+                            
+        //             ;
+
+        //     }
+        //     assets.innerHTML = asss;
+        setTimeout(function () {
+                var swiper = new Swiper('.swiper-container', {
+                    effect: 'coverflow',
+                    grabCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: 'auto',
+                    coverflowEffect: {
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 500,
+                        modifier: 1,
+                        slideShadows: true,
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+                });
+            }, 1000);
+    </script>
+</body>
+
+</html>
