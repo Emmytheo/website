@@ -3,7 +3,10 @@
 
 
 // Establish a Socket.io connection
-const socket = io('https://server.myfixbot.com:3030');
+const socket = io('https://server.myfixbot.com:3030', {
+  transports: ['websocket'],
+  rejectUnauthorized: false
+});
 // Initialize our Feathers client application through Socket.io
 // with hooks and authentication.
 const client = feathers();
