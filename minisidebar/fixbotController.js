@@ -3,7 +3,7 @@
 
 
 // Establish a Socket.io connection
-const socket = io('https://server.myfixbot.com:3030', {
+const socket = io('https://server.myfixbot.com', {
   transports: ['websocket'],
   rejectUnauthorized: false
 });
